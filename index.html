@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		text-align: center;
+		line-height: 1.6;
+		background: #12475f;
+		color: #fff;
+	}
+
+	ul{
+		list-style: none;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	a{
+		text-decoration: none;
+		color: fff;
+	}
+
+	a:hover {
+		border-bottom: 2px solid #f1f1f1;
+	}
+
+	ul li{
+		margin-left: 10px;
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	.navBar{
+		background: #222;
+		height: 80px;
+		opacity: 0;
+		animation-name: navBar;
+		animation-duration: 3s;
+		animation-delay: 1.6s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes navBar{
+		0% {opacity: 0}
+		100% {opacity: 1;}
+	}
+
+
+	.welcomPage{
+		height: 300px;
+	}
+
+	.welcomePage h1{
+		font-size: 50px;
+		line-height: 1.3;
+		position: relative;
+		animation: heading;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes heading{
+		0% {top: -100px}
+		100% {top: 50px}
+	}
+
+	.welcomePage .content{
+		margin: 100px auto auto auto;
+		width: 70%;
+		line-height: 1.3;
+		position: relative;
+		animation: content;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes content{
+		0% {left: -1000px}
+		100% {left: 0px}
+	}
+	.welcomePage .btn{
+		display: inline-block;
+		text-decoration: none;
+		padding: 1rem 2rem;
+		border: #fff 1px solid;
+		margin-top: 40px;
+		opacity: 0;
+		animation-name: btn;
+		animation-duration: 3s;
+		animation-delay: 1.6s;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes btn{
+		0% {opacity: 0}
+		100% {opacity: 1;}
+	}
+
+
+</style>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Midterm Exam</title>
+</head>
+<body>
+	<div class="navBar">
+		<ul>
+			<li><a href="profilePage.html">Home</a></li>
+			<li><a href="newsPage.html">News</a></li>
+			<li><a href="photoGallery.html">Photo Gallery</a></li>
+			<li><a href="videoGallery.html">Video Gallery</a></li>
+		</ul>
+	</div>
+
+	<div class="welcomePage">
+		<h1>Welcome To My Site</h1>
+		<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p class="btn">Read More</p>
+	
+
+	</div>
+
+
+</body>
+</html>

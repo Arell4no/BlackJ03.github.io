@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">			
+		body{
+			background-color: #333;
+			color: #f1f1f1;
+			height: auto;
+		}
+
+		h2{
+			font-weight: normal;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+		}
+
+		figure{
+			margin: auto;
+		}
+
+		.flexRow{
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			align-items: center;
+			margin-top: 10px;
+			background-color: #333;
+		}
+
+		.flexCol{
+			display: flex;
+			flex-flow: column;
+			color: gold;
+			margin: auto 10px auto 10px;
+		}
+
+		.flexRow img{
+			width: 100%;
+			height: auto;
+
+			border: 3px solid #6F4E37;
+			margin: 10px auto 20px auto;
+			transition: transform ease-in-out 0.3s;
+			background-color: #333;
+		}
+
+		.flexRow img:hover{
+			transform: scale(1.2);
+		}
+
+		input[type=checkbox] {
+		  display: none;
+		}
+
+		input[type=checkbox]:checked ~ label{
+		  transform: scale(2);
+		  cursor: zoom-out;
+		}
+
+		.flexRow #zoomImg:hover{
+			transform: none;
+			 transition: transform 0.25s ease;
+		  cursor: zoom-in;
+		}
+
+	</style>
+
+	<meta charset="utf-8">
+	<title>Photo Page</title>
+
+	<link rel="stylesheet" type="text/css" href="cssStyle/navBar.css">
+</head>
+<body>
+	<div class="navBar">
+		<ul>
+			<li><a href="profilePage.html">Home</a></li>
+			<li><a href="newsPage.html">News</a></li>
+			<li><a href="photoGallery.html">Photo Gallery</a></li>
+			<li><a href="videoGallery.html">Video Gallery</a></li>
+		</ul>
+	</div>
+
+	<div class="cont">
+	<h2>Pictures</h2>
+	<div class="flexRow">
+
+		<div class="flexCol">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="picture" title="Monalisa" style="max-width: 120px; min-width: 80px;">
+		<figure>Monalisa</figure>
+		</div>
+		
+		<div class="flexCol">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg/1200px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg" title="Lady with an ermine" style="max-width: 125px;">
+			<figure>Lady with an ermine</figure>
+		</div>
+
+		<div class="flexCol">
+			<img src="https://cdn.britannica.com/33/194733-050-4CF75F31/Girl-with-a-Pearl-Earring-canvas-Johannes-1665.jpg" title="Girl with a Pearl Earring" style="max-width: 145px;">
+		<figure>Girl with a Pearl Earring, 1665</figure>
+		</div>
+
+		<div class="flexCol">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/300px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg" title="Van Gogh self-portrait" style="max-width: 138px;">
+			<figure>Van Gogh self-portrait</figure>
+		</div>
+
+		<div class="flexCol">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Munch_SelfBurningCigarette.jpg/1200px-Munch_SelfBurningCigarette.jpg" title="Self-Portrait with Burning Cigarette" style="max-width: 130px;">
+			<figure>Self-Portrait with Burning Cigarette</figure>
+		</div>
+	
+	</div>
+
+<div class="flexRow" style="flex-wrap: wrap; border: 3px solid #6F4E37; padding: 15px 10px auto 10px; margin-bottom: 80px;">
+
+		<div class="flexCol">
+			<img src="https://www.vangoghgallery.com/img/starry_night_full.jpg" title="The Starry Night" style=" max-width: 230px;">
+			<figure style="margin-bottom: 10px;">The Starry Night</figure>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Jean-L%C3%A9on_G%C3%A9r%C3%B4me_-_Diogenes_-_Walters_37131.jpg" title="The legend himself" style=" max-width: 230px;">
+			<figure>Diogenes</figure>
+		</div>
+
+		<input type="checkbox" id="zoomCheck">
+	  <label for="zoomCheck">
+		<div class="flexCol">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/David_-_The_Death_of_Socrates.jpg" title="The Death of Socrates" style=" max-width: 700px;" id="zoomImg">
+			<figure style="border: 3px solid #6F4E37;">The Death of Socrates</figure>
+		</div>
+		</label>
+
+		<div class="flexCol">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/1200px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg" alt="picture" title="Legendary Painting"style="max-width: 230px;">
+			<figure style="margin-bottom: 10px;">A sunday afternoon on <br>the island of la grande jatte</figure>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Adolf_Hitler_-_Wien_Oper.jpg" alt="picture" style="max-width: 230px;">
+			<figure>Sienna state opera house, 1912</figure>
+		</div>
+	</div>
+
+	<!--Gifs-->
+	<h2>Gifs</h2>
+	<div class="flexRow">
+
+		<div class="flexCol">
+			<img src="https://i.redd.it/fcr6haqi8gm71.gif" alt="picture" style="max-width: 210px; min-width: 80px;">
+		</div>
+		
+		<div class="flexCol">
+			<img src="https://c.tenor.com/rf88Pwf2KcsAAAAC/css-ie.gif" style="max-width: 260px;">
+		</div>
+
+		<div class="flexCol">
+			<img src="https://media0.giphy.com/media/l3q2KRkOVYvi8WfU4/giphy.gif" alt="picture" title="Legendary Painting" style="max-width:210px;">
+		</div>
+
+		<div class="flexCol">
+			<img src="https://c.tenor.com/hWVqJl31yA8AAAAM/web-webdevelopper.gif" style="max-width: 260px;">
+		</div>
+
+		<div class="flexCol">
+			<img src="https://i.gifer.com/embedded/download/1QU3.gif" style="max-width: 195px;">
+		</div>	
+	</div>
+
+	<div class="flexRow" style="flex-wrap: wrap; border: 3px solid #6F4E37; padding: 15px 10px auto 10px;">
+
+		<div class="flexCol">
+			<img src="https://64.media.tumblr.com/fb3793464bafe700223ae3192d80c577/cb219a2413e65eb3-09/s640x960/a0cfba4a15b7e7eb027e4a97aeb6cb399e25602f.gifv" style=" max-width: 340px;">
+			<img src="https://i.redd.it/gtd91xvup9b51.gif" style=" max-width: 240px;">
+		</div>
+
+		<div class="flexCol">
+			<img src="https://media1.giphy.com/media/ayMW3eqvuP00o/giphy.gif" title="..." style=" max-width: 400px;">
+		</div>
+
+		<div class="flexCol">
+			<img src="https://thumbs.gfycat.com/BaggyFearlessCrocodile-max-1mb.gif"style="max-width: 320px;">
+			<img src="https://c.tenor.com/ipC8bVPvJOUAAAAC/luffy-nose-picking.gif" style="max-width: 200px;">
+		</div>
+	</div>
+
+	<!--Pngs-->
+	<h2>PNG</h2>
+	<div class="flexRow">
+
+		<div class="flexCol" >
+			<img src="https://freepngimg.com/static/img/twitter.png" alt="picture" style="max-width: 100px; border: none;" >
+		</div>
+		
+
+		<div class="flexCol">
+			<img src="https://logodownload.org/wp-content/uploads/2018/02/reddit-logo-16.png" style="max-width: 100px; border: none;">
+		</div>
+
+
+		<div class="flexCol">
+			<img src="https://freepngimg.com/static/img/facebook.png" alt="picture" title="Legendary Painting" style="max-width:100px; border: none;">
+		</div>
+
+		<div class="flexCol">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" style="max-width: 90px; border: none;">
+		</div>
+
+		<div class="flexCol">
+			<img src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png" style="max-width: 130px; border: none;">
+		</div>	
+	</div>
+
+<div class="flexRow" style="flex-wrap: wrap; border: 3px solid #6F4E37; padding: 15px 10px auto 10px;">
+
+		<div class="flexCol">
+			<img src="http://pngimg.com/uploads/firefox/firefox_PNG18.png" style=" max-width: 120px; border: none;">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png" style=" max-width: 100px; border: none;">
+		</div>
+
+
+		<div class="flexCol">
+			<img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" title="..." style=" max-width: 180px; border: none;">
+		</div>
+
+		<div class="flexCol">
+			<img src="https://upload.wikimedia.org/wikipedia/en/9/90/The_DuckDuckGo_Duck.png"style="max-width: 100px; border: none;">
+			<img src="http://assets.stickpng.com/images/5f539984060f2e000485808f.png" style="max-width: 100px; border: none;">
+		</div>
+	</div>
+	</div>
+</body>
+</html>
